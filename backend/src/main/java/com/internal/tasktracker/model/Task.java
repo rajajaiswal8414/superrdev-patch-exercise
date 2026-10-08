@@ -1,4 +1,4 @@
-package com.internal.tasktracker;
+package com.internal.tasktracker.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDateTime;

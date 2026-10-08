@@ -1,9 +1,10 @@
 const API_BASE = '/api';
 
-export async function fetchTasks({ query = '', status = '', page = 1, pageSize = 10 }) {
+export async function fetchTasks({ query = '', status = '', priority = '', page = 1, pageSize = 10 }) {
   const params = new URLSearchParams();
   if (query) params.set('q', query);
   if (status) params.set('status', status);
+  if (priority) params.set('priority', priority);
   params.set('page', String(page));
   params.set('pageSize', String(pageSize));
 
